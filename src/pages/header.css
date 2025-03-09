@@ -1,0 +1,104 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 1.5rem;
+    background: linear-gradient(rgba(40, 42, 54, 0.95), rgba(40, 42, 54, 0.95)), url('../assets/images/header-bg.jpg') center/cover;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    min-height: 70px;
+    transition: all 0.3s ease;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #f8f8f2;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0.8rem 1.2rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    background-color: rgba(68, 71, 90, 0.9);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 80%;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li {
+    font-size: 1rem;
+    position: relative;
+}
+
+.nav ul li a {
+    color: #50fa7b;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    margin: auto;
+}
+
+.nav ul li a:hover {
+    background-color: #44475a;
+    color: #50fa7b;
+}
+
+.nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #50fa7b;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s;
+}
+
+.nav ul li a:hover::after {
+    width: 100%;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 20%;
+}
+
+.login button {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    background-color: #44475a;
+    color: #282a36;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border: 2px solid transparent;
+    margin: auto;
+}
+
+.login button:hover {
+    background-color: #282a36;
+    color: #50fa7b;
+    border-color: #50fa7b;
+    transform: translateY(-2px);
+}
+.logo h1{
+    color: #50fa7b;
+}
